@@ -1,0 +1,7 @@
+neko
+out
+*.n
+
+.git
+.pydevproject
+*~

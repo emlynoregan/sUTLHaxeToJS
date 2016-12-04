@@ -1,0 +1,3 @@
+[submodule "sUTLHaxe"]
+	path = sUTLHaxe
+	url = git@github.com:emlynoregan/sUTLHaxe.git

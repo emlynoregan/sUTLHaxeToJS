@@ -1,0 +1,23 @@
+-cp sUTLHaxe/src
+# Uncomment the desirable target
+# JavaScript target
+Sutl
+-js out/sUTL.js
+
+# SWF 9 target
+# -swf9 out/sUTLHaxeToJS.swf
+
+# ActionScript3 target
+# -as3 out
+
+# Neko target
+# -neko out/sUTLHaxeToJS.n
+
+# PHP target
+# -php out
+
+# C++ target
+# -cpp out
+
+# Uncomment and place your main class with package
+# -main package.subpackage.ClassName
