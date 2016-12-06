@@ -2,7 +2,7 @@
 # Uncomment the desirable target
 # JavaScript target
 Sutl
--js out/sUTL.js
+-js sUTLHaxeJS/sUTL.js
 
 # SWF 9 target
 # -swf9 out/sUTLHaxeToJS.swf
