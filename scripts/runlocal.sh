@@ -22,14 +22,14 @@ node "$1/sUTLHaxeJS/sUTLTests.js" || { echo '040' ; exit 1; }
 cd "$1/sUTLHaxeJS" || { echo '060' ; exit 1; }
 git checkout master
 git add . || { echo '070' ; exit 1; }
-if ! git commit -a -m "auto"
+if git commit -a -m "auto"
 then git push origin master || { echo '090' ; exit 1; }
 fi
 
 #5: commit changes to self
 cd "$1" || { echo '100' ; exit 1; }
 git add . || { echo '110' ; exit 1;  }
-if ! git commit -a -m "auto"
+if git commit -a -m "auto"
 then git push origin master || { echo '130' ; exit 1; }
 else echo non-zero
 fi
