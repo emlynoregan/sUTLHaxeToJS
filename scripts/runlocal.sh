@@ -12,6 +12,7 @@ node "$1/sUTLHaxeJS/sUTLTests.js" || { echo '040' ; exit 1; }
 
 #4: Push the new interpreter to the repo
 cd "$1/sUTLHaxeJS" || { echo '060' ; exit 1; }
+git checkout master
 git add . || { echo '070' ; exit 1; }
-git commit -a -m "auto" || { echo '080' ; exit 1; }
+git commit -a -m "auto" || { echo '080' ; exit 0; }
 git push origin master || { echo '090' ; exit 1; }
