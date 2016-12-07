@@ -1,5 +1,6 @@
 #1: Update source
 cd "$1/sUTLHaxe" || { echo '000' ; exit 1; }
+git checkout master
 git pull origin master  || { echo '010' ; exit 1; }
 
 #2: Run generate and run tests
@@ -14,5 +15,12 @@ node "$1/sUTLHaxeJS/sUTLTests.js" || { echo '040' ; exit 1; }
 cd "$1/sUTLHaxeJS" || { echo '060' ; exit 1; }
 git checkout master
 git add . || { echo '070' ; exit 1; }
-git commit -a -m "auto" || { echo '080' ; exit 0; }
-git push origin master || { echo '090' ; exit 1; }
+if ! git commit -a -m "auto"
+then git push origin master || { echo '090' ; exit 1; }
+fi
+
+#5: commit changes to self
+cd "$1" || { echo '100' ; exit 1; }
+git add . || { echo '110' ; exit 1; }
+git commit -a -m "auto" || { echo '120' ; exit 1; }
+git push origin master || { echo '130' ; exit 1; }
