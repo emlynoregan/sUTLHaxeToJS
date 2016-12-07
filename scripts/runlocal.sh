@@ -24,6 +24,7 @@ git checkout master
 git add . || { echo '070' ; exit 1; }
 if git commit -a -m "auto"
 then git push origin master || { echo '090' ; exit 1; }
+else echo skip push JS
 fi
 
 #5: commit changes to self
@@ -31,7 +32,7 @@ cd "$1" || { echo '100' ; exit 1; }
 git add . || { echo '110' ; exit 1;  }
 if git commit -a -m "auto"
 then git push origin master || { echo '130' ; exit 1; }
-else echo non-zero
+else echo skip push self
 fi
 
 echo Finished generating JS
