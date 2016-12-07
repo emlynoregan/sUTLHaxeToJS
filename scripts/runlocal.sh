@@ -1,3 +1,5 @@
+echo Start generating JS
+
 #1: Update source
 cd "$1/sUTLHaxe" || { echo '000' ; exit 1; }
 git checkout master
@@ -25,3 +27,5 @@ git add . || { echo '110' ; exit 1; }
 if ! git commit -a -m "auto"
 then git push origin master || { echo '130' ; exit 1; }
 fi
+
+echo Finished generating JS
