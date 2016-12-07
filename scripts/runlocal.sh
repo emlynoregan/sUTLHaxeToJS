@@ -31,6 +31,7 @@ cd "$1" || { echo '100' ; exit 1; }
 git add . || { echo '110' ; exit 1;  }
 if ! git commit -a -m "auto"
 then git push origin master || { echo '130' ; exit 1; }
+else echo non-zero
 fi
 
 echo Finished generating JS
