@@ -3,7 +3,12 @@ echo Start generating JS
 #1: Update source
 cd "$1/sUTLHaxe" || { echo '000' ; exit 1; }
 git checkout master
-git pull origin master  || { echo '010' ; exit 1; }
+git pull origin master  || { echo '001' ; exit 1; }
+
+#1b: Update target
+cd "$1/sUTLHaxeJS" || { echo '010' ; exit 1; }
+git checkout master
+git pull origin master  || { echo '011' ; exit 1; }
 
 #2: Run generate and run tests
 cd "$1" || { echo '020' ; exit 1; }
