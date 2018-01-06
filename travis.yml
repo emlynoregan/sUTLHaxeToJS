@@ -1,0 +1,3 @@
+language: haxe
+haxe:
+  - stable      # the latest stable release defined in https://haxe.org/download/list/
