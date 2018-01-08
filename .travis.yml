@@ -11,10 +11,8 @@ deploy:
   provider: pages
   local_dir: sUTLHaxeJS
   repo: emlynoregan/sUTLHaxeJS
-  target_branch: master
+  target_branch: dev
   skip_cleanup: true
   github_token: $TOKEN # Set in travis-ci.org dashboard
-#   on:
-#     branch: dev
-    
-    
+  on:
+    branch: dev
