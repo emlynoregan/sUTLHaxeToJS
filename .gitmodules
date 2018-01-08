@@ -1,6 +1,3 @@
 [submodule "sUTLHaxe"]
 	path = sUTLHaxe
 	url = https://github.com/emlynoregan/sUTLHaxe.git
-[submodule "sUTLHaxeJS"]
-	path = sUTLHaxeJS
-	url = https://github.com/emlynoregan/sUTLHaxeJS.git
