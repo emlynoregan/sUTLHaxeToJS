@@ -4,7 +4,7 @@ haxe:
 hxml:  
   - buildtests.hxml 
   - build.hxml
-script:
+after_success:
   - ls -la sUTLHaxeJS && node "./sUTLHaxeJS/sUTLTests.js"
 deploy:
   provider: pages
