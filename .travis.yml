@@ -6,3 +6,14 @@ hxml:
   - build.hxml
 after_script:
   - node "./sUTLHaxeJS/sUTLTests.js" && ./scripts/pushbuild.sh
+deploy:
+  provider: pages
+  local_dir: sUTLHaxeJS
+  repo: emlynoregan/sUTLHaxeJS
+  target_branch: dev
+  skip_cleanup: true
+  github_token: $TOKEN # Set in travis-ci.org dashboard
+#   on:
+#     branch: dev
+    
+    
