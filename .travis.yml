@@ -5,4 +5,4 @@ hxml:
   - buildtests.hxml 
   - build.hxml
 after_script:
-  - node "./sUTLHaxeJS/sUTLTests.js"
+  - node "./sUTLHaxeJS/sUTLTests.js" && ./scripts/pushbuild.sh
