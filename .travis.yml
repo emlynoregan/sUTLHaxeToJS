@@ -5,7 +5,7 @@ hxml:
   - buildtests.hxml 
   - build.hxml
 script:
-  - pwd && node "./sUTLHaxeJS/sUTLTests.js"
+  - ls -la && node "./sUTLHaxeJS/sUTLTests.js"
 deploy:
   provider: pages
   local_dir: sUTLHaxeJS
