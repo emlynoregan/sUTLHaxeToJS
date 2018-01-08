@@ -4,9 +4,8 @@ haxe:
 hxml:  
   - buildtests.hxml 
   - build.hxml
-after_build:
+script:
   - node "./sUTLHaxeJS/sUTLTests.js"
-# && ./scripts/pushbuild.sh
 deploy:
   provider: pages
   local_dir: sUTLHaxeJS
